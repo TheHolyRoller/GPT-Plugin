@@ -11,7 +11,7 @@ export default function Home() {
 
 <>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>MeelayonBase</title>
+        <title>GPT-Plugin</title>
 
     <main id='mainIndexPageContainer' style={{overflowX:'hidden'}} >
    
