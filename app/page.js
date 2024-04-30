@@ -1,10 +1,8 @@
 
-
 import Image from "next/image";
-
+import FileUpload from "./Components/FileUpload";
 
 export default function Home() {
-  
   
   
   return (
@@ -15,7 +13,8 @@ export default function Home() {
 
     <main id='mainIndexPageContainer' style={{overflowX:'hidden'}} >
    
- 
+    <FileUpload/> 
+    
    
     </main>
 

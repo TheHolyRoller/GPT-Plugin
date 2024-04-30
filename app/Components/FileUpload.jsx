@@ -1,3 +1,4 @@
+                'use client'
                 import React, { useState } from 'react';
                 import axios from 'axios';
 
@@ -12,6 +13,8 @@
                 const handleFileChange = (e) => {
 
                     setSelectedFile(e.target.files[0]); 
+                    console.log("file has just been submitted"); 
+
 
 
                 }
@@ -31,20 +34,15 @@
 
 
                     //Now setup the axios post request to send this file over to the server 
-                    axios.post('/upload/files', formatData).then((response) => console.log("File has been uploaded successfully!", response.data))
+                    axios.post('/extract-text', formatData).then((response) => console.log("File has been uploaded successfully!", response.data))
                     .catch((error) => {
 
                         console.error("things did not work out as hoped!:(");
                         console.error("file not uploaded to server"); 
-
-
+                        
 
                     } );
                     
-
-                    
-
-
 
 
                     }
