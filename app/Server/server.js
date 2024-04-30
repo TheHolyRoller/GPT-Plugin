@@ -1,12 +1,10 @@
 const express = require('express');
 const multer = require('multer');
-
-//This is causing the error I think the path might be wrong 
-const pdfjsLib = require('pdfjs-dist/legacy/build/pdf.js');
+const PDFExtract = require('pdf.js-extract').PDFExtract;
 const cors = require('cors');
 const app = express();
 
-
+app.use(cors());
 
 // Set up multer for in-memory file storage
 const storage = multer.memoryStorage();
@@ -22,20 +20,27 @@ const upload = multer({
   }
 });
 
-// Function to extract text from PDF using pdfjs-dist
+// Function to extract text from PDF using pdf.js-extract
 async function extractTextFromPDF(pdfBuffer) {
-  const loadingTask = pdfjsLib.getDocument({ data: pdfBuffer });
-  const pdf = await loadingTask.promise;
-  let extractedText = '';
+  const pdfExtract = new PDFExtract();
+  const options = {}; // Add options here if needed
 
-  for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
-    const page = await pdf.getPage(pageNum);
-    const textContent = await page.getTextContent();
-    const pageText = textContent.items.map(item => item.str).join(' ');
-    extractedText += pageText + '\n';
-  }
-
-  return extractedText;
+  return new Promise((resolve, reject) => {
+    pdfExtract.extractBuffer(pdfBuffer, options, (err, data) => {
+      if (err) {
+        reject(err);
+      } else {
+        // Concatenate all text from the PDF
+        let extractedText = '';
+        data.pages.forEach(page => {
+          page.content.forEach(item => {
+            extractedText += item.str + ' ';
+          });
+        });
+        resolve(extractedText);
+      }
+    });
+  });
 }
 
 // POST route to handle PDF file upload and text extraction
@@ -55,10 +60,9 @@ app.post('/extract-text', upload.single('pdfFile'), async (req, res) => {
   }
 });
 
+
 // Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
-
-
