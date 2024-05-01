@@ -1,0 +1,186 @@
+
+body{
+
+    background-color: rgba(0, 0, 0, 0); 
+    overflow-x: hidden; 
+
+    
+}
+
+
+
+
+
+
+#heroContainer{
+
+
+
+width: 100vw; 
+margin: 0 auto; 
+
+position: relative; 
+
+
+background-color: none !important; 
+
+
+
+
+    
+}
+
+
+
+#heroImageContainer{
+
+    position: relative; 
+
+
+}
+
+
+
+#heroImage{
+
+
+   
+background-image: url('../assets/CryptoMarketValue.jpg') !important; 
+
+background-size: cover; 
+background-position: center top;
+
+min-height: 100vh; 
+width: 100vw; 
+position: relative; 
+z-index: 200; 
+
+
+
+
+
+}
+
+
+
+#heroCTASectionContainer{
+    
+    
+    
+}
+
+
+
+#HeroCTACasing{
+
+    
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%) !important; 
+    z-index: 1190; 
+    
+    
+    color: white;
+    background-color: none !important;
+    
+}
+
+
+@media(max-width: 500px){
+    
+    /* Add in the hero image here  */
+    /* Reduce the height */
+    #heroImage{
+
+        
+        min-height: 90vh; 
+        max-height: 100vh; 
+        outline: 12px solid lime; 
+        
+        
+        
+        
+        
+        }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+  
+  
+
+  
+}
+
+*{
+
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -msbox-sizing: border-box;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+
+body {
+
+    
+  color: #100f0f; 
+  
+  /* color: rgb(var(--foreground-rgb)); */
+  /* background-color: white;  */
+    background: #e7e3e3 !important; 
+    overflow-x: hidden !important;  
+    width: 100vw;
+    
+    
+
+}
+
+
+ 
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+#mainIndexPageContainer{
+
+
+background: white; 
+
+
+  
+}
+
+#indexNavContainer{
+  
+  
+  
+  
+  
+}
+
+
+#homeHeroContainer{
+
+
+  
+  
+  
+}
+
+
+
+#homeLargeCardContainer{
+
+
+  background: white;
+  
+  }
+
+
+#indexSquareCardContainer{
+  
+  
+  background: white; 
+
+  
+  
+}
+
+#indexQuackCTA{
+
+  /* background: white;  */
+  
+  
+  
+}
+
+
+#indexTextComponentContainer{
+
+  
+  background: white; 
+  
+  
+  
+}
+
+
+#indexFooterContainer{
+
+  background: white; 
+  
+  
+  
+}
+
+
+
+
+
+
+#homeHeroContainer{
+
+  background-color: white !important; 
+
+}
+
+
+
+
+#homeLargeCardContainer{
+
+  
+  /* outline: 40px solid red;  */
+  background: white; 
+}

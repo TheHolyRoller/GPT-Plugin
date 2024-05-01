@@ -1,0 +1,332 @@
+
+
+
+#coinbaseHeroContainer{
+
+
+    /* outline: 4px solid lime;  */
+    width: 90vw; 
+    margin: 5rem auto; 
+    color: black; 
+
+     
+    
+}
+
+
+#coinbaseHeroSubContainer{
+    
+    width: 69.336vw; 
+    /* outline: 7px solid red; */
+    margin: 0 auto; 
+    display: grid; 
+    place-content: center; 
+    grid-template-columns: 1fr 1fr;
+
+    
+}
+
+
+
+#coinbaseHeroImageSection{
+
+    
+    
+    
+}
+
+
+#coinbaseHeroImageContainer{
+
+    
+    
+}
+
+
+
+#coinbaseHeroImage{
+
+background-image: url('../assets/SpaceTradingImage.jpeg'); 
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+min-height: 33.938rem;
+width: 35rem; 
+max-width: 35rem; 
+
+border-radius: 25px; 
+
+
+}
+
+
+
+#coinbaseHeroTextSection{
+
+
+
+
+/* outline: 7px solid blue;  */
+display: grid; 
+align-content: center;
+    
+    
+    
+}
+
+
+
+#coinbaseHeroTextSectionContainer{
+
+    
+    
+}
+
+
+#coinbaseHeroTextHeader{
+
+/* Clamp the text here */
+font-size: clamp(1.1rem, 1vw + 2rem, 4.65rem); 
+
+
+/* outline: 4px solid lime;  */
+
+width: 90%; 
+margin: 0 auto;
+
+font-weight: 600;;
+
+    
+}
+
+
+#coinbaseHeroTextInfoContainer{
+
+    
+    
+}
+
+#coinbaseHeroTextParagraph{
+
+
+
+/* outline: 7px solid red; */
+width: 90%; 
+margin: 0 auto; 
+
+margin-top: 1rem;
+font-size: clamp(1rem, 1vw + 1rem, 1.8rem);
+font-weight: 450;
+    
+
+    
+}
+
+
+#coinbaseHeroCTAContainer{
+
+
+    /* outline: 5px solid lime;  */
+    
+    display: flex; 
+    margin: 2.45rem auto;
+    place-items: center;
+    margin-left: 5%; 
+    
+    
+
+    
+    
+}
+
+
+#coinbaseHeroListItem{
+
+    
+    
+    
+}
+
+#coinbaseCTAText{
+
+display: inline-block; 
+
+
+/* outline: 6px solid slateblue;  */
+
+font-size: clamp(1rem, 1vw + 1rem, 1.5rem); 
+font-weight: 570;;
+margin: 1rem auto;
+width: max-content; 
+
+
+    
+}
+
+
+
+#coinbaseCTAButton{
+
+    margin-left: 2rem; 
+    
+    /* clamp the font size here  */
+    font-size: clamp(1.1rem, 1vw + 1rem, 1.2rem); 
+    /* text-transform: uppercase; */
+    font-weight: 600;
+    background-color: #2769f8;
+    /* #0052ff */
+    color: white;
+    /* color: #e4edff;  */
+    
+  
+    width: 9.75rem; 
+    min-height: 3.5rem;
+    display: grid; 
+    place-content: center;
+       border-radius: 30px;
+    
+    
+    
+}
+
+
+#coinbaseSpan{
+    
+    margin-left: 0.3rem; 
+    
+    
+}
+
+
+/* Add in the media queries here  */
+
+@media(max-width: 1075px){
+
+    
+    /* Add in the Image here  */
+    /* Clamp the height to the view width */
+    #coinbaseHeroImage{
+        
+        min-height: clamp(26.188rem, 47vw + 1rem, 40rem); 
+        
+        /* Clamp the width here */
+        width: clamp(25.25rem, 40vw + 1rem, 35rem); 
+        
+        
+        
+    }
+    
+    /* Clamp the width to view width */
+    
+    /* Add in the Text Containers here  */
+    
+    
+    
+    /* Clamp the width to the view width  */
+
+    /* Adjust the text clamp here */
+    
+    
+    /* Select the CTA Section here  */
+    /* Reduce the Top margin here */
+    /* Reduce the text size here  */
+    /* Reduce the margin here */
+    
+    
+    #coinbaseHeroCTAContainer{
+
+        outline: 4px solid lime; 
+        
+        
+    }
+    
+    
+    
+    
+}
+
+
+
+@media(max-width: 990px){
+
+
+/* Select the Button here  */
+/* Reduce it's size:  */
+    
+/* Remove the CTA Text here  */
+
+
+/* Add in Short CTA Text here */
+
+
+
+    
+    
+}
+
+
+@media(max-width: 765px){
+
+    /* Select the Image and move it to the background here */
+    
+    /* Select the Header and move it to the Center  */
+    /* Increase the size  */
+    /* Increase it's width  */
+
+    /* Select the paragraph and do the same  */
+
+    
+    
+    /* Select the CTA Section here  */
+    
+    /* Position the Button and CTA Text Properly here */
+    /* Increase the font size & Button size */
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

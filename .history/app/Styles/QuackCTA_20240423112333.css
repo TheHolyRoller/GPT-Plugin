@@ -1,0 +1,190 @@
+
+
+#quackCTAMainContainer{
+
+    width: 99.99vw;
+    margin: 5rem auto;
+    display: grid;
+    place-content: center;
+
+    
+
+    
+    border-top: 1px solid rgb(222, 223, 233);   
+    border-bottom: 1px solid grey;   
+    color: #100f0f; 
+    
+   
+    height: clamp(8.313rem, 5vw + 14rem, 23rem) !important; 
+
+}
+
+
+#quackCTASubContainer{
+
+    width:51.5vw; 
+    margin: 0 auto; 
+
+    
+}
+
+#quackCTATextContainer{
+
+
+
+}
+
+
+#quackCTAText{
+
+    
+
+
+font-size: clamp(0.5rem, 1vw + 1rem, 1.4rem) !important; 
+
+font-weight: 700; 
+text-align: center; 
+
+
+
+    
+}
+
+
+
+
+
+#quackCTAButtonContainer{
+
+    
+
+    display: grid; 
+    place-content: center;;
+    
+    
+}
+
+
+#quackCTAButton{
+
+    
+    width:10.313rem; 
+    background: #2769f8; 
+    
+    
+    /* background: #0d4779;  */
+    
+    
+    /* background: blue;  */
+    display: grid; 
+    place-content: center;
+    border-radius: 5px; 
+   
+    
+    font-size: clamp(0.8rem, 1vw + 1rem, 1rem) !important; 
+    font-weight: 650;
+    min-height: 2.938rem;
+    
+    margin-top: 1.063rem; 
+    
+    cursor: pointer; 
+    
+    transition: all 600ms cubic-bezier(0.5, 0, 0.5, 1);
+    
+
+    
+    
+}
+
+#quackCTAButton:hover{
+
+        
+    transform: scale(1.1); 
+        
+    
+}
+
+
+
+@media(max-width: 1020px){
+
+
+
+    #quackCTAMainContainer{
+    
+    
+
+        
+        height: clamp(8.313rem, 5vw + 17rem, 40rem) !important; 
+        
+    }
+    
+    /* Modify the Text Clamp here */
+    #quackCTAText{
+
+        font-size: clamp(1.1rem, 1vw + 0.65rem, 1.2rem) !important; 
+        
+        font-weight: 700; 
+        text-align: center; 
+        
+        
+        
+            
+        }
+    
+    
+    
+    
+    
+}
+
+
+/* Add in the media queries here */
+
+@media(max-width: 900px){
+
+    
+     
+    
+    
+    
+}
+
+
+
+@media(max-width: 500px){
+
+    #quackCTASubContainer{
+
+        width:80.5vw; 
+        margin: 0 auto; 
+        
+    } 
+    
+    
+    
+    
+    
+}
+
+@media(max-width: 420px){
+    
+    #quackCTAMainContainer{
+
+        height: clamp(8.313rem, 30.5vw + 16rem, 33rem) !important; 
+        
+        
+    }
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,405 @@
+
+
+
+
+#footerMainContainer{
+
+    width: 99vw; 
+    margin: auto auto; 
+    
+    min-height: 12rem;          
+
+    backdrop-filter: blur(4px) saturate(200%);
+    -webkit-backdrop-filter: blur(4px) saturate(200%);
+    background-color: rgba(109, 120, 157, 0.33);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    
+    
+    
+    
+     /* backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: #2769f8;  */
+    
+    /* background-color: rgba(17, 25, 40, 0.75); */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+    
+    
+}
+
+
+
+    
+    
+#footerSubContainer{
+
+    width: 95%; 
+      margin: 0 auto; 
+    min-height: 12rem; 
+    display: grid; 
+    place-content: center; 
+
+    position: relative; 
+
+
+}
+
+    
+
+
+#footerList{
+
+     
+     display: flex; 
+   
+    place-items: center; 
+    margin: 0 auto; 
+
+       
+}
+
+
+
+
+#footerListItem{
+
+    width:2.875rem; 
+    margin-left: 5vw; 
+    margin-right: 5vw;
+    
+
+}
+
+
+
+#dexToolIconImage{
+
+background-image: url("../assets/DexToolCrypto.webp");
+background-position:center center; 
+background-repeat:no-repeat; 
+background-size: contain; 
+
+color: white; 
+background-color: none; 
+width: 4rem; 
+min-height: 3rem; 
+
+cursor: pointer; 
+
+}
+
+
+#dexToolIconImage{
+}
+
+
+#farcasterIcon{
+
+
+text-transform: uppercase;
+
+font-weight: 800; 
+font-size:clamp(1.1rem, 1vw + 1rem, 1.2rem) !important; 
+width: 3rem; 
+height: 3rem; 
+overflow: hidden; 
+
+background: #8963d2; 
+position: relative; 
+z-index: 10; 
+border-radius: 2px; 
+
+    
+}
+#baseIcon{
+
+ width: 3rem; 
+    min-height: 4rem
+    
+}    
+#largeSVG{
+
+    /* display: none !important;  */
+    
+}    
+
+
+
+
+#telegramIcon{
+
+
+    font-size: clamp(1.2rem, 1w + 1rem, 4rem ) !important; 
+  
+
+
+}
+
+
+#twitterIcon{
+
+    
+    
+
+
+    
+}
+
+
+
+#footerSVG{
+
+    
+
+    
+    
+}
+
+#dexToolsContainer{
+       
+    
+   }
+
+#telegramContainer
+{
+
+    
+
+
+
+}
+
+
+
+/* This is the media query for the base icon */
+@media(max-width: 1200px){
+
+
+    
+    
+}
+
+
+
+
+
+
+/* Add in the media queries here */
+@media(min-width: 750px ){
+
+    #mobileSVG{
+    
+        display: none !important; 
+        
+        
+        
+    }
+
+    
+    
+    
+}
+
+
+@media(max-width: 750px){
+
+    
+    #largeSVG{
+    
+        display: none; 
+        
+    
+    
+    }
+    
+    #mobileSVG{
+        
+        transform: translate(6%, 0);
+        
+    }
+
+
+}
+
+
+
+@media(max-width: 600px){
+
+    
+    #dexToolsContainer{
+
+        width: 2rem; 
+       min-height: 3rem;
+    
+   }
+    
+   
+    
+  
+    #dexToolIconImage{
+
+        background-image: url("../assets/DexToolCrypto.webp");
+        
+        
+        background-position:center center; 
+        background-repeat:no-repeat; 
+        background-size: contain; 
+        
+        
+        color: white; 
+        background-color: none; 
+        width: 3rem; 
+        min-height: 2rem; 
+        
+        
+        }
+    
+    
+        #footerListItem{
+
+            width:2.375rem; 
+            margin-left: 5vw; 
+            margin-right: 5vw;
+                
+        
+        }
+  
+        #dexToolIconImage{
+
+    
+
+
+    
+        }
+
+        
+#farcasterIcon{
+
+
+text-transform: uppercase;
+
+font-weight: 800; 
+font-size:clamp(0.5rem, 1vw + 1rem, 0.9rem) !important; 
+width: 2rem; 
+height: 2rem; 
+overflow: hidden; 
+
+background: #8963d2; 
+position: relative; 
+z-index: 10; 
+border-radius: 2px; 
+
+
+}
+        
+#baseIcon{
+
+margin-left: -5vw;
+margin-top: 4vw; 
+
+
+  
+    
+
+}     
+        
+#baseIconLink{
+
+
+width: 4rem ; 
+
+height: 5rem;
+    
+}
+
+
+
+        
+#footerList{     
+
+        
+    padding-left: 2rem;      
+    padding-right: 2rem; 
+   
+    width: 95%; 
+    
+    
+        
+}
+   
+
+}
+
+@media(max-width: 420px){
+
+  
+    #footerMainContainer{
+        
+        width: 99vw; 
+    margin: auto auto; 
+    
+    min-height: 12rem; 
+        
+    }
+    
+    /* Add in the List here and make sure things are centered */
+    #footerList{
+
+        
+
+        width: 80%; 
+        display: grid; 
+        place-content: center; 
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        
+        
+    }
+    
+    /* Select the first icon here and translate it right slightly  */
+    #dexToolsContainer{
+
+
+
+        transform: translate(1rem, 5px) !important;
+        
+    }
+    
+    
+    /* Add in the List item here */
+    /* Reduce the margin here */
+    #footerListItem{
+        
+        width:2.875rem; 
+        margin-left: 2.5vw; 
+        margin-right: 2.5vw;
+
+        
+    }
+    
+    /* Add in the Square Card here  */
+    
+    
+    
+    /* Add in the Text CTA here  */
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

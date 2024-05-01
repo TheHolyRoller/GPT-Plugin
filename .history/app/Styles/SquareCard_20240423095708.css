@@ -1,0 +1,301 @@
+
+
+
+#squareCardContainer{
+
+    width: 45.45vw ;
+    margin: 4rem auto; 
+    height: 34.375rem; 
+    border-radius: 37px; 
+    position: relative; 
+    /* Just Testing  */
+    background: #ffb81c; 
+    
+    
+    
+    background: #D92929; 
+    
+}
+
+
+
+
+#squareCardBackgroundImageContainer{
+
+
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+#squareCardBackgroundImage{
+
+background-image: url("../assets/CryptoCardSwapImage.webp"); 
+
+
+
+background-position:center center; 
+background-repeat:no-repeat; 
+background-size: contain; 
+
+
+width: 45.5vw; 
+height: 31.25rem; 
+
+
+/* outline: 5px solid purple;  */
+margin: 0 auto; 
+
+
+
+
+
+
+user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+   pointer-events: none;
+
+
+    
+}
+
+
+
+#squareCardInfoContainer{
+
+
+position: absolute; 
+
+bottom: 10%; 
+left: 2.25rem; 
+
+width: 80%; 
+
+
+
+}
+
+
+
+#squareCardHeadline{
+    
+    font-size: clamp(1.6rem, 1vw + 2rem, 2.8rem) !important; 
+    
+    font-weight: 650; 
+    
+    
+    
+    
+}
+
+
+
+#squareCardExtraInfo{
+
+
+font-size: clamp(1.1rem, 1vw + 1rem, 1.32rem) !important; 
+font-weight: 550;
+
+
+    
+    
+}
+
+@media(max-width: 1006px){
+
+
+    #squareCardContainer{
+
+    
+        
+        /* outline: 5px solid purple;  */
+        
+        width: 93.3vw !important;
+        
+        margin: 4rem auto; 
+        height: 34.375rem; 
+        
+        border-radius: 37px; 
+        
+        position: relative; 
+        height: 36.313rem; 
+        
+        
+        
+        
+    }
+    
+    
+    #squareCardInfoContainer{
+
+
+
+        position: absolute; 
+        
+        
+        bottom: 4.2%; 
+        left: 1.563rem; 
+        
+        width: 80%; 
+        
+        
+        
+        
+        
+        }
+        
+        
+        
+        #squareCardHeadline{
+            
+            font-size: clamp(1.6rem, 1vw + 2rem, 2rem) !important; 
+            font-weight: 650; 
+            
+            
+            
+            
+        }
+        
+        
+        
+        #squareCardExtraInfo{
+        
+        
+        font-size: clamp(1rem, 1vw + 1rem, 1.1rem) !important; 
+        font-weight: 550;
+        margin-top: 0.5rem; 
+        
+        
+            
+            
+        }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+@media(max-width: 850px ){
+
+    
+     #squareCardContainer{
+
+    
+        
+        /* height: 92.1vw;  */
+        
+        
+        width: 92.1vw !important;
+        
+        
+        
+    }
+    
+    /* Add in the image here */
+    #squareCardBackgroundImage{
+
+        
+        
+        width: 75.5vw; 
+        height: 31.25rem; 
+        
+
+        
+        margin: 0 auto; 
+  
+    }        
+    
+    
+    
+    #squareCardHeadline{
+            
+        font-size: clamp(1.6rem, 1vw + 2rem, 1.8rem) !important; 
+        font-weight: 650; 
+        
+    }
+    
+    
+    
+    #squareCardExtraInfo{
+    
+    
+    font-size: clamp(0.85rem, 1vw + 1rem, 1rem) !important; 
+    font-weight: 550;
+    margin-top: 0.5rem; 
+    
+    
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+@media(max-width: 490px){
+
+    #squareCardContainer{
+
+    
+        
+        height: 86vw !important;
+        
+        width: 86w !important;
+        max-width: 86vw !important;  
+        
+    }
+    
+    
+    /* Lower the text clamp here  */
+
+}
+
+@media(max-width: 420px){
+
+    #squareCardBackgroundImage{
+        
+        transform: translate(0, -5%);
+        
+        
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

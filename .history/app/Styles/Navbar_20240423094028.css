@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+
+--icon-dimensions: 2.5rem; 
+ 
+ 
+
+}
+
+
+#navBarContainer{
+
+
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    left: 0; 
+    min-height: 5rem; 
+    width: 99.99vw; 
+
+    /* Colors: Coinbase: 
+
+    #0052ff
+
+    Coin Base Modified to Look more Argentinian: 
+    #2769f8
+    
+    
+    
+    Modified Flag: 
+    #2e97f4
+    
+    
+    */
+    
+    
+    background-color: #2769f8; 
+    /* backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75); */
+     overflow-x: hidden; 
+     position: fixed;
+     z-index: 20; 
+
+}
+
+
+
+#hamburgerIconContainer{
+    
+
+    overflow: hidden; 
+
+}
+
+
+
+#logoContainer{
+
+
+
+        width: max-content; 
+        place-self: center;
+
+
+        position: absolute; 
+
+        left: 0.68%; 
+        top: 25%; 
+
+}
+
+
+#navLogo{
+    
+    cursor: pointer; 
+    color: rgb(34, 33, 33); 
+
+
+}
+
+
+#logoCasing{
+
+
+text-transform: uppercase; 
+
+
+font-weight: 900; 
+font-size: clamp(1.1rem, 1vw + 1rem, 1.65rem) !important; 
+
+
+
+}
+
+
+
+
+#navbarSubContainer{
+
+
+    width: 95%; 
+    height: 5rem; 
+    margin: 0 auto; 
+    position: relative; 
+    
+    
+
+}
+
+
+
+
+#navbarButtonGroup{
+
+    height: 5rem; 
+    position: absolute; 
+    right: 0;
+    top: 0; 
+    display: flex; 
+    place-items: center;
+    margin-right: 2%; 
+
+}
+
+
+#navbarButtonList{
+
+
+display: flex; 
+
+
+
+}
+
+
+
+
+
+#navbarListItem{
+
+
+    display: inline-block; 
+
+    margin-left: 2.313rem; 
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer !important;
+    margin-top: 0.375rem; 
+
+}
+
+
+svg{
+
+cursor: pointer !important; 
+}
+
+
+
+#navbarDexScreenerLink::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    
+    
+  }
+
+
+
+#navbarTwitterIcon{
+    
+    cursor: pointer; 
+}
+
+
+#navbarDexToolsContainer{
+    
+    width: 2.5rem; 
+    height: 3rem; 
+
+}
+
+#navbarDexScreenContainer{
+
+
+    width: var(--icon-dimensions); 
+    height: var(--icon-dimensions); 
+    position: relative; 
+    cursor: pointer;
+}
+
+#navbarDexToolsImage{
+
+
+
+    
+    /* outline: 4px solid lime;  */
+    display: grid;
+    place-content: center;
+    
+    color: white; 
+    background-color: none; 
+    
+    width: 3rem; 
+    min-height: 2.5rem; 
+    
+    cursor: pointer; 
+
+    
+}
+
+
+#navbarFarcasterContainer{
+    
+    width: var(--icon-dimensions); 
+    height: var(--icon-dimensions); 
+    
+
+    
+}
+
+
+
+/* Add in the media queries here */
+
+
+@media(min-width: 1008px){
+
+
+    #hamburgerIconContainer{
+    
+        display: none; 
+        
+    
+    
+    }
+
+
+}
+
+
+@media(max-width: 1008px){
+    
+    
+    /* Select the Navbar List here  */
+    #navbarButtonGroup{
+    
+        display: none !important; 
+        
+        
+    }
+    
+    
+    /* Select the Hamburger menu here  */
+    #logoContainer{
+        /*left: 43.4%;
+        */left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) !important ;
+        padding-top: 2px;
+        
+        -webkit-transform: translate(-50%, -50%) !important ;
+        -moz-transform: translate(-50%, -50%) !important ;
+        -ms-transform: translate(-50%, -50%) !important ;
+        -o-transform: translate(-50%, -50%) !important ;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

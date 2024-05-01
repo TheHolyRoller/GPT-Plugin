@@ -1,0 +1,172 @@
+
+
+
+:root{
+
+
+--font-size: clamp(1.5rem, 1vw + 3.33rem, 5rem) !important;
+
+--mobile-font: clamp(1.1rem, 1vw + 2rem, 3rem) !important; 
+
+    
+    
+}
+
+
+
+#textComponentMainContainer{
+
+    
+    
+    width: 60vw; 
+    margin: 4rem auto; 
+    display: grid; 
+    place-content: center;
+    text-align: center; 
+    color: #100f0f; 
+    
+    
+    /* color: rgb(16, 15, 15);  */
+    
+    
+
+}
+
+
+
+#textComponentSubContainer{
+
+
+
+}
+
+
+
+
+
+
+
+#textComponentTopText{
+
+/* font-size: 4.25rem; */
+font-weight: 600;
+
+/* Now integrate that font size into a clamp  */
+font-size: var(--font-size);
+
+
+
+
+}
+
+#textComponentBottomText{
+
+    font-weight: 600;
+
+font-size: var(--font-size); 
+
+
+
+
+    
+}
+
+
+/* Add in the media queries here */
+
+@media(max-width: 1000px){
+
+    #textComponentTopText{
+
+        /* font-size: 4.25rem; */
+        font-weight: 600;
+        
+        /* Now integrate that font size into a clamp  */
+        font-size:var( --mobile-font);
+
+        
+        
+        }
+        
+        #textComponentBottomText{
+        
+            font-weight: 600;
+        
+        font-size: var(--mobile-font); 
+
+        
+           
+        }
+        
+        #textComponentMainContainer{
+
+            width: 80vw; 
+
+        }
+        
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

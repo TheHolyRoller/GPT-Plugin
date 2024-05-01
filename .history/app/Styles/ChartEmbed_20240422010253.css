@@ -1,0 +1,60 @@
+
+#chartMainContainer{
+    
+    
+    
+}
+
+
+
+#chartSubContainer{
+    
+    
+    
+    
+}
+
+
+
+#dexscreener-embed{
+    
+    
+    
+    
+}
+
+
+
+
+
+
+@media(min-width:1400px){
+
+#dexscreener-embed{
+
+
+
+    
+}
+
+}
+
+
+#dexscreener-embed iframe{
+    
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    border:0;
+    
+    
+    
+    
+}
+
+
+
+
+

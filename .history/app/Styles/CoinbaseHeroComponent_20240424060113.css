@@ -1,0 +1,177 @@
+
+
+
+#coinbaseHeroContainer{
+
+    outline: 4px solid lime; 
+    width: 90vw; 
+    margin: 5rem auto; 
+    color: black; 
+
+     
+    
+}
+
+
+#coinbaseHeroSubContainer{
+    
+    width: 69.336vw; 
+    /* outline: 7px solid red; */
+    margin: 0 auto; 
+    display: grid; 
+    place-content: center; 
+    grid-template-columns: 1fr 1fr;
+
+    
+}
+
+
+
+#coinbaseHeroImageSection{
+
+    
+    
+    
+}
+
+
+#coinbaseHeroImageContainer{
+
+    
+    
+}
+
+
+
+#coinbaseHeroImage{
+
+background-image: url('../assets/SpaceTradingImage.jpeg'); 
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+min-height: 33.938rem;
+width: 35rem; 
+max-width: 35rem; 
+
+border-radius: 20px; 
+
+
+
+    
+}
+
+
+
+#coinbaseHeroTextSection{
+
+
+
+outline: 7px solid blue; 
+display: grid; 
+align-content: center;
+    
+    
+    
+}
+
+
+
+#coinbaseHeroTextSectionContainer{
+
+    
+    
+}
+
+
+#coinbaseHeroTextHeader{
+    
+}
+
+
+#coinbaseHeroTextInfoContainer{
+
+    
+    
+}
+
+#coinbaseHeroTextParagraph{
+
+    
+    
+}
+
+
+#coinbaseHeroCTAContainer{
+
+    
+    
+}
+
+
+#coinbaseCTAText{
+
+    
+}
+
+
+
+#coinbaseCTAButton{
+
+    
+}
+
+
+#coinbaseSpan{
+
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

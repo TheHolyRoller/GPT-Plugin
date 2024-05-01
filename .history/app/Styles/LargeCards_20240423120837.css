@@ -1,0 +1,389 @@
+
+#cardMainContainer{
+
+
+    
+}
+
+
+#cardSubContainer{
+
+width: 76.8vw; 
+margin: 4rem auto; 
+
+min-height: 34.275rem; 
+
+border-radius: 30px; 
+
+position: relative; 
+
+background: #2769f8; 
+
+overflow: hidden !important; 
+
+}
+
+
+#cardBackgroundContainer{
+
+}
+
+
+
+#largeCardImageContainer{
+
+
+
+
+    /* outline: 4px solid lime;  */
+    
+    position: relative; 
+    
+    box-sizing: border-box;
+    
+    display: block; 
+    width: initial; 
+    
+    
+    
+    
+}
+
+
+
+#largeCardImage{
+
+
+width: 50%; 
+
+min-height: 50vw; 
+position: relative; 
+z-index: 99; 
+
+
+background-image: url('../assets/CryptoCardImage.webp') !important; 
+
+background-size: cover; 
+background-position: center center ; 
+
+background-repeat: no-repeat;
+
+width: 60%; 
+
+
+min-height: 50vw; 
+
+position: absolute; 
+right:0; 
+
+top:0; 
+
+padding-top: 12rem !important; 
+margin-top: 5rem; 
+
+
+z-index: 99; 
+
+/* outline: 4px solid red;  */
+
+
+
+
+    
+    
+}
+
+
+#largeCardCTAContainer{
+
+
+position: absolute; 
+
+left: 3.75rem; 
+top: 25%; 
+
+
+    
+    
+    
+}
+
+
+#largeCardCTAHeaderContainer{
+
+    
+    font-size: clamp(1.5rem, 1vw + 2rem, 3.375rem) !important; 
+    font-weight: 700;
+    
+    
+    
+}
+
+
+#largeCardCTAHeader{
+
+
+
+
+
+}
+
+
+#largeCardCTATextContainer{
+
+    
+    /* outline: 2px solid lime;  */
+
+
+}
+
+#largeCardCTAText{
+
+    
+    font-size: clamp(1.5rem, 1vw + 2rem, 3.375rem) !important; 
+    color: #100f0f; 
+    
+    /* color: black;  */
+    font-weight: 610;
+
+}
+
+
+#largeCardCTASpan{
+
+    display: block; 
+    
+    
+    
+}
+
+
+#largeCardCTAButton{
+
+
+outline: 1px solid white; 
+
+display: grid; 
+place-content: center;
+position: relative;
+min-height: 3rem; 
+width: 10.625rem; 
+margin-top: 1.5rem; 
+margin-bottom: 1rem;
+
+border-radius: 55px; 
+
+font-weight: 650;
+
+cursor: pointer; 
+
+transition: all 600ms cubic-bezier(0.5, 0, 0.5, 1);
+
+}
+
+#largeCardCTAButton:hover{
+
+color: black; 
+background: gold; 
+outline: 1px solid white; 
+
+}
+
+
+
+/* Add in the media queries here */
+
+@media(max-width: 1007px){
+
+/* Select the CTA container here  */
+#largeCardCTAContainer{
+
+
+    /* outline: 5px solid blue;  */
+    position: absolute; 
+    left: 1.775rem; 
+    bottom: 0% !important;
+    z-index: 99; 
+    
+    /* outline: 4px solid slime;  */
+    
+    transform: translate(0,112%) !important; 
+    
+    
+    /* Adjust the height here */
+    height: min-content; 
+    
+    }
+    
+    /* Add in the Image here  */
+    /* Place it in the center increase the width and lower it's z index  */
+    
+    #largeCardImage{
+
+
+        /* width: 80%;  */
+        
+        /* min-height: 50vw;  */
+        position: relative; 
+        
+        background-image: url('../assets/CryptoCardImage.webp') !important; 
+        
+        /* background-size: contain;  */
+        
+        
+        background-size: 100% auto; 
+        background-position: center top ; 
+        
+        background-repeat: no-repeat;
+        
+        position: absolute; 
+        -ms-zoom: 20%;
+        right:-10%; 
+        
+        top:0%; 
+        transform: translate(-50%, -5%) !important; 
+        
+        
+        padding-top: 12rem !important; 
+        margin-top: 5rem; 
+        
+        
+        z-index: 1; 
+        
+      
+            
+            
+        }
+    
+
+/* Select the CTA Text Here */
+/* Reduce the Size here */
+#largeCardCTAHeaderContainer{
+
+    
+    font-size: clamp(1.5rem, 1vw + 2rem, 2.07rem) !important; 
+    font-weight: 700;
+    
+    z-index: 4; 
+    
+        
+}
+
+
+/* Select the Text here */
+
+#largeCardCTAText{
+
+    /* Adjust the Text size here */
+    font-size: clamp(1.5rem, 1vw + 2rem, 1.98rem) !important; 
+    font-weight: 670; 
+    
+
+    
+}
+
+#largeCardCTASpan{
+
+    display: inline; 
+    
+    
+}
+
+
+
+}
+
+
+@media(max-width: 700px){
+
+    #largeCardCTAContainer{
+
+
+    /* outline: 5px solid blue;  */
+    position: absolute; 
+    left: 1.775rem; 
+    bottom: 0% !important;
+    /* outline: 4px solid slime;  */
+    
+    transform: translate(0,70%) !important; 
+    
+    
+    /* Adjust the height here */
+    height: min-content; 
+    
+    
+    
+    
+    }
+
+/* Select the CTA Text Here */
+/* Reduce the Size here */
+#largeCardCTAHeaderContainer{
+
+    
+    font-size: clamp(1.5rem, 1vw + 2rem, 2.07rem) !important; 
+    font-weight: 700;
+        
+}
+
+
+/* Select the Text here */
+
+#largeCardCTAText{
+
+    /* Adjust the Text size here */
+    font-size: clamp(1.5rem, 1vw + 2rem, 1.98rem) !important; 
+    font-weight: 670; 
+    
+
+    
+}
+
+#largeCardCTASpan{
+
+    display: inline; 
+    
+    
+}
+    
+    
+    
+
+
+
+
+}
+
+
+@media(max-width: 500px){
+
+    #largeCardCTAContainer{
+
+
+      
+        
+        transform: translate(0,40%) !important; 
+        
+        }
+
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

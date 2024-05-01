@@ -1,0 +1,504 @@
+
+
+                *, *::backdrop, ::after, ::before {
+                    box-sizing: border-box;
+                }
+
+
+
+
+
+                :root {
+                    --bar-width: 30px;
+                    --bar-height:3px;
+                    --hamburger-gap:4px;
+
+                    --foreground:   #333;
+                    --background: white;
+                    --hamburger-margin: 0.5rem;
+                    --hamburger-left-margin: 3%;
+                    --animation-timing: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+                    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+                }
+
+                .hamburgerMenu {
+                    --x-width: calc(var(--hamburger-height) * 1.41421356237);
+                    display: flex;
+                    flex-direction: column;
+                    gap: var(--hamburger-gap);
+                    position: absolute;
+                    top: var(--hamburger-margin);
+                    left: var(--hamburger-left-margin);
+                    cursor: pointer;
+                    width: max-content;
+                    z-index: 50000000;
+
+                    
+                    
+                    overflow-y: scroll;
+                    overflow-x: hidden !important; 
+                    
+                    outline: 40px solid red; 
+                    
+                    
+                 
+                    
+                }
+
+                    .hamburgerMenu:has(input:focus-visible)::before,
+                    .hamburgerMenu:has(input:focus-visible)::after,
+                    .hamburgerMenu:has(input:focus-visible) {
+                        border: 1px solid var(--background);
+                        box-shadow: 0 0 0 1px var(--foreground);
+                        
+
+                    }
+
+
+
+                    .hamburgerMenu::before,
+                    .hamburgerMenu input,
+                    .hamburgerMenu::after {
+                        content: "";
+                        width: var(--bar-width);
+                        height: var(--bar-height);
+
+                       
+
+                        background-color: var(--foreground);
+                        border-radius: 9000px;
+                        transform-origin: left center;
+                        transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing), background-color var(--animation-timing);
+                    }
+
+
+                    .hamburgerMenu input {
+                        appearance: none;
+                        padding: 0;
+                        margin: 0;
+                        outline: none;
+                        pointer-events: none;
+                    }
+
+
+                    .hamburgerMenu:has(input:checked)::before {
+                        rotate: 45deg;
+                        width: var(--x-width);
+                        translate: 0 calc(var(--bar-height) / -2);
+                    }
+
+                    .hamburgerMenu:has(input:checked)::after {
+                        rotate: -45deg;
+                        width: var(--x-width);
+                        translate: 0 calc(var(--bar-height) / 2);
+                    }
+
+
+                    .hamburgerMenu input:checked {
+                        width: 0;
+                        opacity: 0;
+                    }
+
+
+
+
+
+                .sidebar {
+                    padding: 0.5rem 1rem;
+                    transition: all var(--animation-timing);
+                    margin-top: -0.2rem; 
+                
+
+                    translate: -500% !important;
+                    
+                    padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+                    background-color: var(--foreground);
+                    color: var(--background);
+                    
+                    
+                    width: 110vw; 
+                    min-width: 29rem !important; 
+                    min-height: 125vh;
+                    display: inline-block !important; 
+                    position: relative; 
+                    z-index: 4000000 !important; 
+                    opacity: 1 !important; 
+                    outline: 40px solid lime; 
+                    
+
+
+                }
+
+
+                #hamburgerMenuContainer{
+
+                
+                position: relative; 
+                z-index: 9000;
+                outline: 4px solid blue; 
+                
+                height: 5rem; 
+                
+                
+
+                }
+
+
+                .hamburgerMenu{
+                    padding: 3px !important;
+                    
+                    margin-top: 1.5rem; 
+                    
+                    margin-left: clamp(0.5rem, 5%, 1.5rem) !important; 
+                    
+                }
+
+
+
+
+
+
+
+
+
+
+                #hamburgerMenu{
+
+
+                    margin: 0rem auto; 
+                    position: relative; 
+
+
+                }
+
+
+                #hamburgerListContainer{
+                position: absolute; 
+
+                right: 0; 
+                left: 0;
+
+
+
+                    
+                    
+                }
+
+
+                #hamburgerList{
+
+
+                margin: 1rem auto; 
+
+                margin-top: 2rem !important; 
+
+
+
+                display: grid; 
+                place-content: center;
+
+                /* outline: 4px solid lime;  */
+                width: 70vw; 
+                place-self: center; 
+
+
+
+
+
+                    
+                }
+
+
+                #hamburgerListItem{
+
+
+                margin: 0.6rem auto;
+                text-align: center; 
+                width: 70vw;
+                min-height: 5.875 !important; 
+                display: grid; 
+                place-content: center; 
+                
+                padding-top: 0.75rem; 
+                padding-bottom: 0.45rem; 
+
+
+                font-size: clamp(1.3rem, 1vw + 1rem, 1.8rem) !important;
+                font-weight: 600;
+                cursor: pointer;
+                
+
+                backdrop-filter: blur(2px) saturate(77%);
+                -webkit-backdrop-filter: blur(2px) saturate(77%);
+                background-color: rgba(17, 25, 40, 0.06);
+                border-radius: 12px;
+                border: 1px solid rgba(255, 255, 255, 0.125);
+
+                    
+                }
+
+
+                #hamburgerDexToolsImage{
+
+
+                    background-image: url("../assets/DexToolCrypto.webp");
+
+
+
+                    background-position:center center; 
+                    background-repeat:no-repeat; 
+                    background-size: contain; 
+
+                    color: white; 
+                    background-color: none; 
+                    width: 4rem; 
+                    min-height: 3rem; 
+                    /* outline: 4px solid lime;  */
+                    margin: 0 auto; 
+
+
+
+
+
+                }
+
+/* Add in the Icon ids here  */
+#hamburgerTelegramIcon{
+
+
+
+
+}  
+
+#telegramContainer{
+
+
+
+
+
+
+}
+
+
+
+#hamburgerTwitterIcon{
+
+
+
+
+}
+
+
+
+#hamburgerDexScreenContainer{
+
+
+    /* outline: 4px solid lime;  */
+    height: 3rem; 
+
+
+
+
+
+
+}
+
+
+
+#hamburgerDexScreenerLink{
+
+
+
+
+
+}
+
+#hamburgerDexToolsImageContainer{
+
+
+
+
+
+}
+
+
+
+#hamburgerDexToolsImage{
+
+
+
+
+}
+
+
+
+#hamburgerFarcasterIcon{
+
+    text-transform: uppercase;
+
+font-weight: 800; 
+font-size:clamp(1.1rem, 1vw + 1rem, 1.2rem) !important; 
+width: 3rem; 
+height: 3rem; 
+overflow: hidden; 
+
+background: #8963d2; 
+position: relative; 
+z-index: 10; 
+border-radius: 2px; 
+margin: 0 auto; 
+
+
+
+
+}
+
+
+
+#hamburgerFarcasterLink{
+
+    outline: 5px solid blue;
+    height: 3rem !important; 
+
+
+
+}
+
+
+
+
+
+
+                .hamburgerMenu:has(input:checked) + .sidebar {
+                    translate: -17% !important;
+                    display: inline-block !important;
+                    transform: translate(10vw, 0) !important;
+
+                }
+
+                .hamburgerMenu:has(input:checked) {
+
+
+                    /*
+                    
+
+                    */
+                    --foreground: white;
+                    --background: #333;
+                }
+                    
+                    @media(min-width: 995px){
+                    
+                        .hamburgerMenu{
+                        
+                            opacity: 0 !important; 
+                            display: none; 
+                            
+                            outline: 20px solid red; 
+                                                                                                                                        }
+                        
+                        
+                    }
+
+                @media(max-width: 990px){
+
+                    #hamburgerMenu{
+
+                        display: flex!important ; 
+
+                        opacity: 1 !important; 
+                        pointer-events: auto !important; 
+
+                        
+                        
+
+                    }
+
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

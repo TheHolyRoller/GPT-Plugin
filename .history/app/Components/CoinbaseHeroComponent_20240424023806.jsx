@@ -1,0 +1,15 @@
+import React from 'react'
+
+// Import the style sheet here
+import '../Styles/CoinbaseHeroComponent.css'; 
+
+
+function CoinbaseHeroComponent() {
+  return (
+    <div  >
+      
+    </div>
+  )
+}
+
+export default CoinbaseHeroComponent
