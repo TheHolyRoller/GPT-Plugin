@@ -47,7 +47,7 @@
 
                         console.log('WHY IS THIS NOT RUNNING!@##@'); 
                         // There is an error originating here 
-                        const response = await axios.post('http://localhost:3000/extract-text', formatData);
+                        const response = await axios.post('http://localhost:3000/upload', formatData);
                         console.log(response.data.message);
                         console.log('IS THIS CODE RUNNING'); 
                         console.log('this is the type of response from the server', typeof response);
@@ -120,7 +120,7 @@
                         <div id='extractedText'>
 
                         <p>
-
+                    
                         {extractedText}
                         </p>
                         </div>
