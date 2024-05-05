@@ -5,8 +5,6 @@
 
 
                 function FileUpload() {
-
-
                 //Add in the state setup here
                 const [selectedFile, setSelectedFile] = useState(null);
                 const [extractedText, setExtractedText] = useState('');
@@ -17,8 +15,7 @@
                     setSelectedFile(e.target.files[0]); 
                     console.log("file has just been submitted"); 
                     console.log("this is the current selected file", selectedFile); 
-
-
+                    
                 }
 
                 //Add in the upload file to server function here 
@@ -42,46 +39,32 @@
                     console.log('this is the form data with the appended file', formatData); 
                     console.log('this is the type of form data', typeof formatData); 
 
+                    
 
+                    // Find out why this is not running now
                     //Now setup the axios post request to send this file over to the server 
                     try {
 
-
+                        console.log('WHY IS THIS NOT RUNNING!@##@'); 
+                        // There is an error originating here 
                         const response = await axios.post('http://localhost:3000/extract-text', formatData);
                         console.log(response.data.message);
                         console.log('IS THIS CODE RUNNING'); 
                         console.log('this is the type of response from the server', typeof response);
                         console.log('this is the message part of the response', response.data.message);
-                        console.log('this is the data part of the response from the server', response.data); 
+                        console.log('this is the data part of the response from the server', response.data);
+                        
+                        console.log("-----TRYING TO GET TO THE TEXT------", response.data.choices[0].message.content);
+                        const renderedText = response.data.choices[0].message.content; 
+                        console.log('this is the rendered TEXT @$@$@#$@$@$@#$@$', renderedText); 
 
-
+                        // console.log('this is the returned completion choices', completion.choices[0].message.content);
 
                         console.log('this is the response', response); 
 
-                        setExtractedText(response.data.text); // Set the extracted text in state
-
-                        console.log('this is the extracted text', extractedText); 
-
-                        try{
-
-
-                            
-                            // Add in another try catch block here and put the new open ai api call in here 
-                            const analyzeResponse = await axios.post('http://localhost:3000/analyze-text', { text: extractedText });
-                            const analysisResult = analyzeResponse.data.analysis;
-                            console.log('this is the response from open ai', analysisResult); 
-                            
-                            
-                            // Step 3: Display the analysis result in the UI
-                            document.getElementById('analysis-result').textContent = analysisResult;
-                        }
-                        catch(error){
-
-                            console.error("Could not connect to open ai api", error); 
-
-
-                        }
-
+                        // setExtractedText(response.data.text); // Set the extracted text in state
+                        setExtractedText(renderedText); 
+                        // console.log('this is the extracted text', extractedText); 
                         
 
                       } catch (error) {
@@ -89,7 +72,6 @@
                         console.error("this is really frustrating"); 
 
                       }
-                    
 
 
                     }
@@ -106,6 +88,10 @@
 
 
                 }
+
+
+                // Add in the analyze text function here
+                
 
 
 
@@ -132,9 +118,11 @@
                         </button>
 
                         <div id='extractedText'>
-                            
 
-                        {extractedText && <div><strong>Extracted Text:</strong> {extractedText}</div>}
+                        <p>
+
+                        {extractedText}
+                        </p>
                         </div>
 
                     </article>
